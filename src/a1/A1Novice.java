@@ -36,7 +36,7 @@ public class A1Adept {
 			double price1 = scan.nextDouble();
 			pricetotal = price1 * num1 + pricetotal;
 			}
-            total_price[i] = pricetotal;
+                total_price[i] = pricetotal;
 					
 			}
 		
