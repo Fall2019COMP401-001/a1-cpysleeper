@@ -84,8 +84,7 @@ public class A1Adept {
 			totalforall = totalprice[o] + totalforall;
 		}
 		double avg = totalforall / customeramount;
-//		for (int jjj=0; jjj<totalprice.length;jjj++) {
-//		System.out.println(totalprice[jjj]);}
+		
 		System.out.println("Biggest:" + " " + names[max] + " (" + String.format("%.2f", totalprice[max]) + ")");
 		System.out.println("Smallest:" + " " + names[min] + " (" + String.format("%.2f", totalprice[min]) + ")");
 		System.out.println("Average: " + String.format("%.2f", avg));
