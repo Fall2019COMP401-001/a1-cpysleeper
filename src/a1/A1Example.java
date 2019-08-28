@@ -35,6 +35,7 @@ public class A1Example {
 		// All input parsed, so close scanner
 		scan.close();
 		
+		
 		// Use helper functions to calculate sum, min, and max
 		
 		int sum = calculateValueSum(values);
