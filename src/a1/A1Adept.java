@@ -1,9 +1,5 @@
 package a1;
 
-
-
-import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Scanner;
 
 public class A1Adept {
