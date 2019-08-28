@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Scanner;
 
-public class A1Adept {
+public class A1Novice {
 
 	public static void main(String[] args) {
 		
