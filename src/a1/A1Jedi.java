@@ -109,14 +109,5 @@ public class A1Jedi {
 				else
 					System.out.println(countcus[x] + " customers bought " + countfruit[x] + " " + namefruit[x]);
 			}
-				
-	
-	
-	}
-			
-
-
-
-
-	
+	}	
 }
