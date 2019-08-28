@@ -1,5 +1,9 @@
 package a1;
 
+
+
+//import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Scanner;
 
 public class A1Adept {
@@ -46,31 +50,31 @@ public class A1Adept {
 			double price1 = prices[fruitindex];
 			priceofone = price1 * num1 + priceofone;
 			}
-                        totalprice[i] = priceofone;
+            totalprice[i] = priceofone;
 					
 			}
 		int min = 0; 
 		double comparep = 111111111;
 		for(int h = (customeramount - 1); h >= 0  ; h --)
-	        {
+	    {
 	    
-	    		if (comparep > totalprice[h])
-	        	min= h;
-	        	comparep = totalprice[h];
+	    if (comparep > totalprice[h])
+	        min= h;
+	        comparep = totalprice[h];
 	    	
-	        }
+	    }
 		  
 			
 			
 		int max =  0;
 		double comparep2 = 0.0;
 		for(int s = 0; s < customeramount ; s ++)
-		{
+		    {
 		    
-		    if (totalprice[s] < comparep2)
+		    if (totalprice[s] > comparep2)
 		        max= s;
 		        comparep2 = totalprice[s];
-	        }
+		    }
 		
 		double totalforall = 0;
 		
