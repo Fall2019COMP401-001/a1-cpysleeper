@@ -45,7 +45,7 @@ public class A1Adept {
 				for(int n = 0; n < numitems ;n++)
 				{
 					if (fruit.equals(namefruit[n]))
-					fruitindex = n;
+					{fruitindex = n;}
 				}
 			double price1 = prices[fruitindex];
 			priceofone = price1 * num1 + priceofone;
@@ -58,9 +58,10 @@ public class A1Adept {
 		for(int h = (customeramount - 1); h >= 0  ; h --)
 	    {
 	    
-	    if (comparep > totalprice[h])
+	    if (comparep > totalprice[h]) {
 	        min= h;
 	        comparep = totalprice[h];
+	        }
 	    	
 	    }
 		  
@@ -71,9 +72,9 @@ public class A1Adept {
 		for(int s = 0; s < customeramount ; s ++)
 		    {
 		    
-		    if (totalprice[s] > comparep2)
-		        max= s;
-		        comparep2 = totalprice[s];
+		    if (totalprice[s] > comparep2) {
+		        max = s;
+		        comparep2 = totalprice[s];}
 		    }
 		
 		double totalforall = 0;
@@ -83,6 +84,8 @@ public class A1Adept {
 			totalforall = totalprice[o] + totalforall;
 		}
 		double avg = totalforall / customeramount;
+//		for (int jjj=0; jjj<totalprice.length;jjj++) {
+//		System.out.println(totalprice[jjj]);}
 		System.out.println("Biggest:" + " " + names[max] + " (" + String.format("%.2f", totalprice[max]) + ")");
 		System.out.println("Smallest:" + " " + names[min] + " (" + String.format("%.2f", totalprice[min]) + ")");
 		System.out.println("Average: " + String.format("%.2f", avg));
