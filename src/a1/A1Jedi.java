@@ -16,12 +16,14 @@ public class A1Jedi {
 				String [] namefruit = new String[numitems];
 				double [] prices = new double[numitems];
 				int [] countfruit = new int[numitems];
+				int fruitindex = 0;
 				for(int l=0; l < numitems ; l ++)
 				{
 					countfruit[l] = 0;
 				}
 			    
 				int [] countcus = new int[numitems];
+				
 				for(int l=0; l < numitems ; l ++)
 				{
 					countcus[l] = 0;
@@ -32,9 +34,9 @@ public class A1Jedi {
 					namefruit[m]= scan.next();
 					prices[m] = scan.nextDouble();
 				}
+				
 				int customeramount = scan.nextInt();
 				double [] totalprice = new double[customeramount];
-				
 				String [] names = new String[customeramount];
 				
 				for(int i=0; i < customeramount; i++)
@@ -46,10 +48,13 @@ public class A1Jedi {
 					int amountfruit = scan.nextInt();
 					double priceofone = 0; 
 					
+					int [] temp = new int[numitems];
 					for(int j = 0; j< amountfruit; j++) {
+						
 					int num1 = scan.nextInt();
 					String fruit = scan.next();
-					int fruitindex = 0;
+					
+					
 					
 						for(int n = 0; n < numitems ;n++)
 						{
@@ -59,14 +64,19 @@ public class A1Jedi {
 						
 						
 						
-						countfruit[fruitindex] = num1 + countfruit[fruitindex];
-					    countcus[fruitindex] = countcus[fruitindex] + 1;
+					countfruit[fruitindex] = num1 + countfruit[fruitindex];
+					temp[fruitindex] = 1;
 						
 					double price1 = prices[fruitindex];
 					priceofone = price1 * num1 + priceofone;
+					
 					}
+					for (int k=0; k<numitems; k++) {
+						countcus[k] += temp[k];
+					}
+					
 		            totalprice[i] = priceofone;
-							
+		           	
 					}
 				int min = 0; 
 				double comparep = 111111111;
@@ -109,5 +119,14 @@ public class A1Jedi {
 				else
 					System.out.println(countcus[x] + " customers bought " + countfruit[x] + " " + namefruit[x]);
 			}
-	}	
+				
+	
+	
+	}
+			
+
+
+
+
+	
 }
