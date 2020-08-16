@@ -9,6 +9,8 @@ public class A1Example {
 		// you know what Eclipse thinks it is using and
 		// so that you can confirm that it is 10.0 or higher.
 		
+
+		
 		// Set up scanner object to read space-separated values
 		// from console input
 		
@@ -32,7 +34,6 @@ public class A1Example {
 		
 		// All input parsed, so close scanner
 		scan.close();
-		
 		
 		// Use helper functions to calculate sum, min, and max
 		
